@@ -1,0 +1,33 @@
+{
+  "name": "@woodytechnologies/metadata-demo",
+  "version": "1.0.0",
+  "description": "Woody Technologies metadata component usage example",
+  "main": "index.js",
+  "author": "Woody Technologies",
+  "license": "Woody Technologies",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "react-scripts": "^4.0.3"
+  },
+  "dependencies": {
+    "@woodytechnologies/metadata": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
