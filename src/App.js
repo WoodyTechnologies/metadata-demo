@@ -3,6 +3,13 @@ import Metadata from '@woodytechnologies/metadata'
 import logo from './logo.svg';
 import './App.css';
 
+
+const configBrowser = {
+  sessionID : "session_945aab3d-298a-420a-8304-3ce60fb39149",
+  browseUrl : "https://localhost:4443/browser/browse"
+}
+
+
 const exampleMetadata = [
   {
     "id": "usermetadata_text",
@@ -97,6 +104,7 @@ function App() {
 
   return (
     <div className="App">
+      <div id="modal" />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <a className="App-link" href="https://www.npmjs.com/package/@woodytechnologies/metadata" target="_blank" rel="noopener noreferrer" >
@@ -105,7 +113,7 @@ function App() {
         <h3>Example metadata</h3>
         <div className="meta-container">
           {exampleMetadata.map(metadata => {
-            return <Metadata data={metadata} onChange={handleChange} />
+            return <Metadata data={metadata} {...configBrowser} onChange={handleChange} />
           })}
         </div>
 
@@ -140,7 +148,7 @@ function App() {
         </select>
         <div className="meta-container">
           {metadatas && metadatas.map(meta => {
-            return <Metadata data={meta} onChange={handleChange} />
+            return <Metadata data={meta} onChange={handleChange} {...configBrowser} />
           })}
         </div>
       </header>
