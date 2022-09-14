@@ -56,3 +56,13 @@
   padding: 0;
   margin: 0;
 }
+
+.meta-container div[class^="main-module_"] input,
+.meta-container div[class^="main-module_"] * {
+  color: white;
+  font-size: 13px;
+}
+
+.meta-container div[class^="main-module_"] div[class$="-multiValue"] * {
+  color: black !important
+}

@@ -12,31 +12,30 @@ const configBrowser = {
 
 const exampleMetadata = [
   {
-    "id": "usermetadata_text",
-    "name": "text",
-    "type": "text",
-    "config": {
-      "type": {},
-      "format": {
-        "name": "text",
-        "multi_line": true
-      }
-    },
-    "editable": true,
-    "mandatory": false
+      "id": "usermetadata_text_3c04e7b8-7c41-448d-8dba-19336dcff915",
+      "name": "Text",
+      "type": "text",
+      "config": {
+          "type": {},
+          "format": {
+              "name": "text"
+          }
+      },
+      "mandatory": false,
+      "accessibility": "editable"
   },
   {
-    "id": "usermetadata_tags",
-    "name": "tags",
-    "type": "tags",
-    "config": {
-      "type": {},
-      "format": {
-        "name": "text"
-      }
-    },
-    "editable": true,
-    "mandatory": false
+      "id": "usermetadata_tags_fc5a70fb-d0e3-4b86-baab-7ddc9ccba4a2",
+      "name": "Tags",
+      "type": "tags",
+      "config": {
+          "type": {},
+          "format": {
+              "name": "tags"
+          }
+      },
+      "mandatory": false,
+      "accessibility": "editable"
   }
 ]
 
